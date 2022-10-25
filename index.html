@@ -13,25 +13,27 @@
 </head>
 
 <body>
+    <div class="welcom"> welcome in malik world !</div>
     <header>
         <div class="container">
             <img class="logo" src="logo.png" alt="" />
-            <i class="fa-thin fa-alien"></i>
             <div class="menue">
-                <ul>
-                    <li>apps</li>
-                    <li>youtube</li>
-                    <li>gmail</li>
-                    <li>maps</li>
-                </ul>
-            </div>
-            <div class="links">
-                <i class="fas fa-bars fa"></i>
                 <ul>
                     <li><a href="#services">serveces</a></li>
                     <li><a href="#portofilo">portofilo</a></li>
-                    <li><a href="#contact">contact</a></li>
                     <li><a href="#about">about</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-thin fa-alien"></i>
+            <div class="links">
+                <i class="fas fa-bars fa drop_down"></i>
+                <span class="close">close</span>
+                <ul>
+                    <li><a href="#services">serveces</a></li>
+                    <li><a href="#portofilo">portofilo</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </div>
         </div>
@@ -135,7 +137,7 @@
     <!-- End Services -->
     <!-- end services -->
     <!-- start portofilo -->
-    <div class="portfolio" id="portfolio">
+    <div class="portfolio" id="portofilo">
         <div class="container">
             <h2 class="special-heading">Portfolio</h2>
             <p>If you do it right, it will last forever.</p>
@@ -144,7 +146,8 @@
                     <img src="portfolio-1.jpg" alt="" />
                     <div class="info">
                         <h3>Project Here</h3>
-                        <p>My creative ability is very difficult to measure because it can manifest in so many surprising
+                        <p>My creative ability is very difficult to measure because it can manifest in so many
+                            surprising
                             and.</p>
                     </div>
                 </div>
@@ -152,7 +155,8 @@
                     <img src="portfolio-2.jpg" alt="" />
                     <div class="info">
                         <h3>Project Here</h3>
-                        <p>My creative ability is very difficult to measure because it can manifest in so many surprising
+                        <p>My creative ability is very difficult to measure because it can manifest in so many
+                            surprising
                             and.</p>
                     </div>
                 </div>
@@ -160,7 +164,8 @@
                     <img src="portfolio-3.jpg" alt="" />
                     <div class="info">
                         <h3>Project Here</h3>
-                        <p>My creative ability is very difficult to measure because it can manifest in so many surprising
+                        <p>My creative ability is very difficult to measure because it can manifest in so many
+                            surprising
                             and.</p>
                     </div>
                 </div>
@@ -176,7 +181,7 @@
             <p>you should belive the light you see</p>
             <div class="about-content ">
                 <div class="image">
-            <img src="about.jpg" alt="" />
+                    <img src="about.jpg" alt="" />
                 </div>
                 <div class="text">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -192,7 +197,7 @@
     </div>
     <!-- end about -->
     <!-- start contact  -->
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="container">
             <h2 class="special-heading">Contact</h2>
             <p>We are born to create</p>
@@ -201,9 +206,9 @@
                 <a href="mailto:leonagency@mail.com?subject=Contact" class="link">leonagency@mail.com</a>
                 <div class="social">
                     Find Us On Social Networks
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
+                    <a href="youtube.com"> <i class="fab fa-youtube"></i></a>
+                    <a href="facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="twitter.com"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </div>
@@ -212,6 +217,7 @@
     <div class="footer">
         &copy;2022 <span>leon</span> all right reserved
     </div>
+    <script src="/index.js"></script>
 </body>
 
 </html>

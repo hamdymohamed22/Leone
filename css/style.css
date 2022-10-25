@@ -6,7 +6,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 :root {
@@ -18,13 +18,11 @@ html {
     .container {
         width: 750px;
     }
-
 }
 
-@media(min-width:992pxpx) {
+@media(min-width:992px) {
     .container {
         width: 970px;
-
     }
 }
 
@@ -37,6 +35,25 @@ html {
 body {
     font-family: 'Times New Roman', Times, serif;
 }
+.welcom{
+    z-index: 4;
+    background-color: rgba(255, 255, 255, 0.59);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--secondery-color);
+    padding-top: 30%;
+    transition: 2s;
+}
+.welcom:hover{
+    background-color: rgba(255, 255, 255, 0.131);
+    color: var(--secondery-color);
+}
+
 
 header {
     padding: 20px;
@@ -49,6 +66,22 @@ header .logo {
 header .container .menue ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+}
+
+@media(max-width:900px) {
+    header .container .menue {
+        display:none;
+    }
+}
+
+@media(min-width:900px) {
+    header .links {
+            display:none;
+        }
 }
 
 header .container .menue ul li {
@@ -61,6 +94,7 @@ header .container .menue ul li {
     border-radius: 5px;
     width: 100px;
     text-align: center;
+    cursor: pointer;
 }
 
 header .container .menue ul li::before {
@@ -77,23 +111,15 @@ header .container .menue ul li::before {
 header .container .menue ul li:hover::before {
     width: 100%;
 }
-
-header .container .menue ul li:hover {
-    cursor: pointer;
-    background-color: rgb(202, 202, 202);
-}
-
-header .container .menue ul {
-    list-style-type: none;
+header .menue ul li a{
+    text-decoration: none;
+    color: var(--secondery-color);
 }
 
 header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-}
-
-.container {
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -126,21 +152,22 @@ header .links ul {
     z-index: 1;
 }
 
-header .links ul::before {
-    content: "";
-    border-width: 10px;
-    border-color: transparent transparent rgb(130, 130, 130) transparent;
-    border-style: solid;
-    position: absolute;
-    right: 5px;
-    top: -20px;
+header .links .close {
+    padding: 5px;
+    margin: 5px;
+    width: max-content;
+    color:white;
+    text-align: center;
+    background-color: var(--secondery-color);
+    border-radius:5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: none;
+    transition: 1s;
 }
 
-header .links:hover ul {
-    display: block;
-}
-
-li a {
+.links li a {
     display: block;
     color: rgb(10, 10, 10);
     text-decoration: none;
@@ -148,8 +175,10 @@ li a {
     transition: .3s;
 }
 
-li a:hover {
+.links li a:hover {
     padding-left: 25px;
+    color: #333;
+
 }
 
 header .links ul li:not(:last-child) a {
@@ -161,6 +190,7 @@ header .links ul li:not(:last-child) a {
     background-image: url(../2.jpg);
     height: calc(100vh - 64px);
     background-size: cover;
+    background-clip: content-box;
     height: 100vh;
     position: relative;
 }
